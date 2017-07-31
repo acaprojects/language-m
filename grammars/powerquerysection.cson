@@ -1,0 +1,92 @@
+fileTypes: [
+  "pq"
+  "PQ"
+  "m"
+  "M"
+]
+name: "powerquerysection"
+scopeName: "source.powerquerysection"
+undefined: "repository"
+patterns: [
+  {
+    include: "#Noise"
+  }
+  {
+    begin: "\\["
+    beginCaptures:
+      "1":
+        name: "punctuation.section.brackets.begin.powerquery"
+    end: "\\]"
+    endCaptures:
+      "0":
+        name: "punctuation.section.brackets.end.powerquery"
+    patterns: [
+      {
+        include: "#Noise"
+      }
+      {
+        include: "#IllegalKeyword"
+      }
+      {
+        include: "source.powerqueryexpression"
+      }
+    ]
+    name: "meta.literal-attribute.powerquery"
+  }
+  {
+    begin: "\\b(section)\\b"
+    beginCaptures:
+      "1":
+        name: "keyword.other.section.powerquery"
+    end: ";"
+    endCaptures:
+      "0":
+        name: "punctuation.terminator.sectiondeclaration.powerquery"
+    patterns: [
+      {
+        include: "#Noise"
+      }
+      {
+        include: "#IllegalKeyword"
+      }
+      {
+        include: "#SectionName"
+      }
+      {
+        match: "[^\\s]"
+        name: "invalid.illegal.powerquery"
+      }
+    ]
+    name: "meta.sectiondeclaration.powerquery"
+  }
+  {
+    begin: "\\b(shared)\\b"
+    beginCaptures:
+      "0":
+        name: "keyword.other.shared.powerquery"
+    end: ";"
+    endCaptures:
+      "0":
+        name: "punctuation.terminator.sectionmember.powerquery"
+    patterns: [
+      {
+        include: "#Noise"
+      }
+      {
+        include: "#IllegalKeyword"
+      }
+      {
+        include: "#Section"
+      }
+    ]
+  }
+  {
+    include: "#IllegalKeyword"
+  }
+  {
+    include: "#IllegalOperator"
+  }
+  {
+    include: "#Section"
+  }
+]
