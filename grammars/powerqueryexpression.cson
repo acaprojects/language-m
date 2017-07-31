@@ -111,7 +111,7 @@ repository:
       }
     ]
   Whitespace:
-    match: "\\s*"
+    match: "\\s+"
   BlockComment:
     begin: "/\\*"
     end: "\\*/"
