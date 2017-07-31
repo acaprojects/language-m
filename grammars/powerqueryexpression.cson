@@ -4,7 +4,7 @@ fileTypes: [
   "m"
   "M"
 ]
-name: "powerqueryexpression"
+name: "Power Query Expression"
 scopeName: "source.powerqueryexpression"
 patterns: [
   {

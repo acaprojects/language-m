@@ -4,7 +4,7 @@ fileTypes: [
   "m"
   "M"
 ]
-name: "powerquerysection"
+name: "Power Query Section"
 scopeName: "source.powerquerysection"
 undefined: "repository"
 patterns: [
