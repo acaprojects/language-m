@@ -1,6 +1,6 @@
 {
   "name": "language-m",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Power Query Expression language support in Atom",
   "keywords": [
     "m",
@@ -12,6 +12,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
