@@ -213,14 +213,14 @@ repository:
                       (?<![\\._\\p{Lu}\\p{Ll}\\p{Lt}\\p{Lm}\\p{Lo}\\p{Nl}\\p{Nd}\\p{Pc}\\p{Mn}\\p{Mc}\\p{Cf}])
                       # Optional @ symbol
                       (@?)
-      
+
                       # start of captured group
                       (
                           # identifier-start-character
                           [_\\p{Lu}\\p{Ll}\\p{Lt}\\p{Lm}\\p{Lo}\\p{Nl}]
                           # 0-or-more identifier-part-characters
                           [_\\p{Lu}\\p{Ll}\\p{Lt}\\p{Lm}\\p{Lo}\\p{Nl}\\p{Nd}\\p{Pc}\\p{Mn}\\p{Mc}\\p{Cf}]*
-                          
+
                           # optionally followed by zero-or-more of this group
                           (?:
                               # dot
@@ -892,17 +892,17 @@ repository:
           | SapHana.Database
           | Cube.Parameters
           | Cube.ApplyParameter
-          | Crypto.CreateHash                 
-          | Crypto.CreateHmac   
-          | Error.Unexpected                  
-          | Extension.Contents                
-          | Extension.CredentialError         
-          | Extension.CurrentApplication      
-          | Extension.CurrentCredential       
-          | Extension.LoadString              
-          | Extension.Module  
-          | Percentage.From                   
-          | Web.SignForOAuth1  
+          | Crypto.CreateHash
+          | Crypto.CreateHmac
+          | Error.Unexpected
+          | Extension.Contents
+          | Extension.CredentialError
+          | Extension.CurrentApplication
+          | Extension.CurrentCredential
+          | Extension.LoadString
+          | Extension.Module
+          | Percentage.From
+          | Web.SignForOAuth1
                               )\\b)
         '''
       }
@@ -1049,17 +1049,17 @@ repository:
           | WebMethod.Post
           | WebMethod.Put
           | WebMethod.Type
-          | Credential.AccessDenied           
-          | Credential.AccessForbidden        
-          | Credential.EncryptionNotSupported 
-          | Credential.NativeQueryPermission  
-          | CryptoAlgorithm.SHA1              
-          | CryptoAlgorithm.SHA256            
-          | CryptoAlgorithm.Type  
-          | Percentage.Type                
-          | OAuth1.HMACSHA1                   
-          | OAuth1.RSASHA1                    
-          | OAuth1.Type 
+          | Credential.AccessDenied
+          | Credential.AccessForbidden
+          | Credential.EncryptionNotSupported
+          | Credential.NativeQueryPermission
+          | CryptoAlgorithm.SHA1
+          | CryptoAlgorithm.SHA256
+          | CryptoAlgorithm.Type
+          | Percentage.Type
+          | OAuth1.HMACSHA1
+          | OAuth1.RSASHA1
+          | OAuth1.Type
                               )\\b)
         '''
       }
